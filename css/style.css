@@ -1,0 +1,108 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  justify-content: center;
+  height: 100vh;
+  height: var(--app-height, 100vh);
+}
+body header {
+  height: var(--app-height, 15vh);
+  background-color: #EFE7D7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25vh;
+}
+body header .icon {
+  height: 100px;
+}
+body header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 25px;
+  font-size: 20px;
+}
+body header .container a {
+  text-decoration: none;
+  color: #17774B;
+  padding: 0px 10px;
+}
+body main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20vh;
+  border-bottom: #B52D2D solid 2px;
+  padding: 15px 0px;
+  margin: 0px 20vh;
+  font-size: 22px;
+  color: #B52D2D;
+}
+body main .header-img {
+  background: url("image/header.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+body main img {
+  padding: 25px 27.5vh;
+  width: 100%;
+  height: var(--app-height, 70vh);
+}
+body .contact-main {
+  background: url("../image/contactus.png");
+  height: 75vh;
+  background-position: center;
+  background-size: cover;
+}
+body .contact-main .contact-container {
+  padding: 5vh 25vh;
+}
+body .contact-main .contact-container h2 {
+  color: #17774B;
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+body .contact-main .contact-container p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+body .contact-main .contact-container p .text-color {
+  color: #B52D2D;
+}
+body .shop-info {
+  margin: 15vh 25vh;
+}
+body footer {
+  height: var(--app-height, 10vh);
+  background-color: #EFE7D7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body footer a {
+  text-decoration: none;
+  color: black;
+}
+body footer img {
+  padding: 0px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
