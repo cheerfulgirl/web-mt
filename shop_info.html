@@ -8,21 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>店面資訊 - 港吃茶餐廳</title>
 </head>
 <body>
     <header>
         <div class="item">
-            <img class="icon" src="image/icon.png">
+            <a href="index.html"><img class="icon" src="image/icon.png"></a>
         </div>
         <div class="item">
             <div class="container">
                 <div class="item">
                     <nav>
-                        <a href="">菜單</a>
-                        <a href="">關於我們</a>
-                        <a href="">店面資訊</a>
-                        <a href="">聯絡我們</a>
+                        <div class="navbar">
+                            <div class="dropdown">
+                                <button class="dropbtn">菜單</button>
+                                <div class="dropdown-content">
+                                    <a href="#">港式碟飯</a>
+                                    <a href="#">粥粉麵</a>
+                                    <a href="#">主廚小菜</a>
+                                    <a href="#">小吃點心</a>
+                                    <a href="#">老火燉湯</a>
+                                </div>
+                            </div> 
+                            <a href="">關於我們</a>
+                            <a href="shop_info.html">店面資訊</a>
+                            <a href="contact.html">聯絡我們</a>
+                          </div>
                     </nav>
                 </div>
                 <div class="item">
@@ -33,30 +46,35 @@
         </div>
     </header>
     
-    <main>
-        <div class="shop-info">
-            <h3>店面資訊</h3>
-            <p>店面資訊</p>
-            <p>106, 台灣, 台北市, 大安區, 延吉街88巷 8號, 1樓<br>
-                電話：+886 2 8963 1999
-            </p>
+    <main class="shop-main">
+        <h2>店面資訊</h2>
+        <div class="shop-container">
+            <h1>港吃茶餐廳</h1>
+            <p>106, 台灣, 台北市, 大安區, 延吉街88巷 8號, 1樓</p>
+            <p>電話：+886 2 8963 1999</p>
             <hr>
-            <p>自取</p>
-            <p>營業時間<br>
+            <div class="row">
+                <div class="col">
+                    <h3>自取</h3>
+                    <p>營業時間<br>
 
-                週一至週日
-                ，週三公休<br>
-                
-                11:30 AM - 10:00 PM
-            </p>
-            <p>外送</p>
-            <p>營業時間<br>
+                        週一至週日
+                        ，週三公休<br>
+                        
+                        11:30 AM - 10:00 PM
+                    </p>
+                </div>
+                <div class="col">
+                    <h3>外送</h3>
+                    <p>營業時間<br>
 
-                週一至週日
-                ，週三公休<br>
-                
-                12:00 AM - 10:30 PM
-                </p>
+                        週一至週日
+                        ，週三公休<br>
+                        
+                        12:00 AM - 10:30 PM
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
 
